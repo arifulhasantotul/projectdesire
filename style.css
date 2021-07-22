@@ -44,7 +44,7 @@
     --fw500: 500;
     --fw600: 600;
     --fw700: 700;
-    --fs-heading: ;
+    --fs-heading: calc(40px + 2vw);
     --fs-title: ;
     --fs-para: ;
     --bg: #40514e;
@@ -52,12 +52,15 @@
     --bg-para: ;
     --bg-btn: #40514e;
     --clr: #fff;
-    --clr-heading: ;
-    --clr-title: ;
-    --clr-para: ;
-    --clr-btn: ;
+    --clr-heading: #005A4A ;
+    --clr-title: #005a4a;
+    --clr-para: #339b88;
+    --clr-btn: #fff;
     --shadow: ;
-    --shadow-btn: ;
+    --shadow-btn: rgb(255, 255, 255) 10px -10px 0px -3px, #005a4a 10px -10px;
+    --trans: all 0.3s linear;
+    
+
 }
 
 *{
@@ -70,8 +73,25 @@ nav,
 }
 
 .navbar,
-section.cover{
+section.cover,
+section.trend,
+section.category{
     margin-bottom: calc(100px - 3vw );
+}
+section.trend h1,
+section.category h1 {
+    margin-bottom: calc(80px - 3vw);
+    color: var(--clr-heading);
+    font-weight: var(--fw700);
+    letter-spacing: 10px;
+    font-size: var(--fs-heading);
+    text-align: center;
+}
+section.trend .card p{
+    color: var(--clr-para)
+}
+section.trend .card h5{
+    color: var(--clr-title);
 }
 nav a {
     color: var(--clr);
@@ -79,6 +99,11 @@ nav a {
 .nav-item a{
     color: var(--clr);
     font-weight: var(--fw200);
+}
+.nav-item a:hover{
+    color: #161616;
+    font-weight: var(--fw600);
+    transition: var(--trans);
 }
 nav a img{
     width: 30px;
@@ -92,6 +117,10 @@ a.btn:hover {
     color: var(--bg-btn);
     background: var(--clr);
     border: 5px solid var(--bg-btn);
-
+    font-weight: var(--fw600);
+    transition: var(--trans);
+    box-shadow: var(--shadow-btn);
 }
-
+section.trend .card img{
+    height: calc(250px - 3vw) ;
+}

@@ -27,11 +27,15 @@
         <nav class="navbar navbar-expand-lg shadow-lg rounded-bottom">
         <div class="container">
             <a class="navbar-brand fs-2" href="#">
-                <img src="images/logo.png" alt="mechanical watch">
-                dESIRE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="mb-2" src="images/logo.png" alt="mechanical watch">
+            dESIRE</a>
+            
+            <!-- toggler start  -->
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- toggler end  -->
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
             <!-- navbar nav start  -->
@@ -75,8 +79,8 @@
                 
                 <li class="nav-item">
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"> <i class="fas fa-search" aria-hidden="true"></i> </button>
+                        <input class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search">
+                        <button class="btn btn-outline-white" type="submit"> <i class="fas fa-search text-white" aria-hidden="true"></i> </button>
                     </form>
                 </li>
 
@@ -131,11 +135,130 @@
     <!-- header end  -->
 
     <!-- main start  -->
-    <main class="container"></main>
+    <main class="container-fluid">
+    
+        <!-- section 2 start  -->
+        <section class="trend">
+
+            <h1>Trending Now</h1>
+
+            <!-- trend grid start  -->
+            <div class="container">
+                
+                <div class="row g-5">
+
+                    <!-- trend 1 start  -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+    
+                        <!-- card start  -->
+                        <div class="card bg-transparent border-0">
+                            <img src="images/trend/trend3.jpg" class="card-img-top" alt="...">
+                            <!-- card body start  -->
+                            <div class="card-body">
+                                <p class="card-text">Vincero <sup>TM</sup></p>
+                                <h5 class="card-title">Vincero Outrider</h5>
+                            </div>
+                            <!-- card body end -->
+    
+                        </div>
+                        <!-- card end  -->
+    
+                    </div>
+                    <!-- tren 1 end  -->
+    
+                    <!-- tren 2 start  -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                        
+                        <!-- card start  -->
+                        <div class="card bg-transparent border-0">
+                            <img src="images/trend/trend1.jpg" class="card-img-top" alt="...">
+                            <!-- card body start  -->
+                            <div class="card-body">
+                                <p class="card-text">Alpina <sup>TM</sup></p>
+                                <h5 class="card-title">Alpina Seastrong Horological Smartwatch</h5>
+                            </div>
+                            <!-- card body end -->
+                        </div>
+                    </div>
+                    <!-- trend 2 end  -->
+    
+                    <!-- trend 3 start  -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                        
+                        <!-- card start  -->
+                        <div class="card bg-transparent border-0">
+                            <img src="images/trend/trend2.jpg" class="card-img-top" alt="...">
+                            <!-- card body start  -->
+                            <div class="card-body">
+                                <p class="card-text">Tag Heuer <sup>TM</sup></p>
+                                <h5 class="card-title">Tag Heuer Connected Modular 41</h5>
+                            </div>
+                            <!-- card body end -->
+                        </div>
+                        <!-- card end  -->
+    
+                    </div>
+                    <!-- trend 3 end  -->
+                </div>
+            
+            </div>
+            <!-- trend grid end  -->
+
+        </section>
+        <!-- section 2 end  -->
+
+        <!-- section 3 start  -->
+        <section class="category">
+            <h1>Category</h1>
+
+            <!-- category start  -->
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-xl-2 g-2">
+                    <div class="col-12 col-xl-6">
+                        <div class="card">
+                            <img style="height: calc(200px + 7.7vw);" src="images/category/category1.jpg" class="card-img-top" alt="...">
+                            
+                            <div class="row row-cols-1 row-cols-2 gx-2">
+    
+                                <div class="col mt-1">
+                                    <div class="card ">
+                                        <img src="images/category/category3.jpg" class="card-img-top" alt="...">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col mt-1">
+                                    <div class="card">
+                                        <img src="images/category/category4.jpg" class="card-img-top" alt="...">
+                                        
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="card">
+                            <img style="height: calc(150px + 31.7vw);" src="images/category/category2.jpg" class="card-img-top" alt="...">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- category end  -->
+
+        </section>
+        <!-- section 3 end -->
+
+    </main>
     <!-- main end  -->
 
     <!-- footer start  -->
-    <footer class="container"></footer>
+    <footer class="container-fluid"></footer>
     <!-- footer end  -->
 
     <!-- bundle  -->
