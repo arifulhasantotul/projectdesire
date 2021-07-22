@@ -47,10 +47,11 @@
     --fs-heading: ;
     --fs-title: ;
     --fs-para: ;
-    --bg: ;
+    --bg: #40514e;
     --bg-title: ;
     --bg-para: ;
-    --bg-btn: ;
+    --bg-btn: #40514e;
+    --clr: #fff;
     --clr-heading: ;
     --clr-title: ;
     --clr-para: ;
@@ -63,7 +64,34 @@
     margin: 0; padding: 0; box-sizing: border-box;
     font-family: var(--ff-cera);
 }
+nav, 
+.navbar .dropdown-menu{
+    background: var(--bg);
+}
 
+.navbar,
+section.cover{
+    margin-bottom: calc(100px - 3vw );
+}
+nav a {
+    color: var(--clr);
+}
+.nav-item a{
+    color: var(--clr);
+    font-weight: var(--fw200);
+}
 nav a img{
     width: 30px;
 }
+a.btn {
+    background: var(--bg-btn);
+    color: var(--clr);
+    font-weight: var(--fw200);
+}
+a.btn:hover {
+    color: var(--bg-btn);
+    background: var(--clr);
+    border: 5px solid var(--bg-btn);
+
+}
+
