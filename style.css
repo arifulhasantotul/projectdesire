@@ -60,7 +60,6 @@
     --shadow-btn: rgb(255, 255, 255) 10px -10px 0px -3px, #005a4a 10px -10px;
     --trans: all 0.3s linear;
     
-
 }
 
 *{
@@ -72,14 +71,19 @@ nav,
     background: var(--bg);
 }
 
-.navbar,
+section.cover{
+    padding-top: calc(200px - 3vw);
+}
 section.cover,
 section.trend,
-section.category{
+section.category,
+section.collection,
+section.slide{
     margin-bottom: calc(100px - 3vw );
 }
 section.trend h1,
-section.category h1 {
+section.category h1,
+section.collection h1 {
     margin-bottom: calc(80px - 3vw);
     color: var(--clr-heading);
     font-weight: var(--fw700);
@@ -87,14 +91,20 @@ section.category h1 {
     font-size: var(--fs-heading);
     text-align: center;
 }
-section.trend .card p{
+section.trend .card p,
+section.collection .card p{
     color: var(--clr-para)
 }
-section.trend .card h5{
+section.trend .card h5,
+section.collection .card h5,
+section.collection .card h6{
     color: var(--clr-title);
 }
 nav a {
     color: var(--clr);
+}
+nav a:hover {
+    color: #161616;
 }
 .nav-item a{
     color: var(--clr);
