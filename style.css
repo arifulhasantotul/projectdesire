@@ -67,7 +67,8 @@
     font-family: var(--ff-cera);
 }
 nav, 
-.navbar .dropdown-menu{
+.navbar .dropdown-menu,
+footer{
     background: var(--bg);
 }
 
@@ -133,4 +134,27 @@ a.btn:hover {
 }
 section.trend .card img{
     height: calc(250px - 3vw) ;
+}
+footer{
+    padding-bottom: calc(50px - 3vw);
+}
+footer .social .fa,
+footer .social .fab{
+    color: var(--clr);
+    font-size: 22px;
+    padding: 5px;
+    transition: var(--trans);
+}
+footer h6{
+    font-weight: var(--fw400);
+    padding-bottom: 15px;
+    font-size: fs;
+}
+footer p{
+    font-weight: 200;
+}
+footer .social .fa:hover,
+footer .social .fab:hover{
+    color: #000;
+    transform: rotate(360deg);
 }
