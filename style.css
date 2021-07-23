@@ -137,6 +137,7 @@ section.trend .card img{
 }
 footer{
     padding-bottom: calc(50px - 3vw);
+    padding-top: calc(80px - 3vw);
 }
 footer .social .fa,
 footer .social .fab{
